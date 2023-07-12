@@ -1,1 +1,4 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@include font-face("SFProDisplay", "../fonts/SFProDisplay-Regular", 400, sans-serif);
+@include font-face("SFProDisplay", "../fonts/SFProDisplay-Medium", 500, sans-serif);
+@include font-face("SFProDisplay", "../fonts/SFProDisplay-Semibold", 600, sans-serif);
+@include font-face("SFProDisplay", "../fonts/SFProDisplay-Bold", 700, sans-serif);
