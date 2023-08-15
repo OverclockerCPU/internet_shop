@@ -1,0 +1,70 @@
+.cards-nav {
+  margin-bottom: 90px;
+
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    grid-auto-flow: row dense;
+  }
+
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 20px;
+
+    min-height: 129px;
+    border-radius: 3px;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &:active,
+    &:hover {
+      box-shadow: 3px 3px 20px 0px rgba(50, 50, 50, 0.25);
+      background: var(--light);
+
+      .cards-nav__title {
+        color: var(--accent);
+      }
+
+      .cards-nav__link::before {
+        right: -14px;
+      }
+    }
+  }
+
+  // .cards__nav-title
+  &__title {
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  // .cards__nav-link
+  &__link {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 14px;
+    color: var(--light-gray-text);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -9px;
+      width: 6px;
+      height: 9px;
+      background: url(../../img/svg/left-arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

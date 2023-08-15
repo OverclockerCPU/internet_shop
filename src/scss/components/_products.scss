@@ -1,0 +1,14 @@
+.products {
+  margin-bottom: 35px;
+  .products-list {
+    align-items: center;
+    gap: 50px;
+  }
+  // .products__title
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__link{
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,42 @@
+.cards-bottom {
+  margin-bottom: 72px;
+  .bottom-banner {
+    position: relative;
+    width: 100%;
+    min-height: 165px;
+    margin-top: 72px;
+
+    &__link {
+      position: absolute;
+      right: 123px;
+      top: 54px;
+      padding: 3px 41px;
+      background-color: var(--light);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 50px;
+      transition: background-color 0.3s ease-in-out;
+      &:hover {
+        background-color: var(--light-gray-text);
+      }
+    }
+  }
+  .card-link-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card-link {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    background-color: var(--basic);
+    padding: 17px 43px;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: var(--light-gray-text);
+    }
+  }
+}

@@ -61,6 +61,7 @@
   &__list {
     font-weight: 700;
     gap: 50px;
+    margin-left: 10px;
   }
   // .menu__item
   &__item {
@@ -93,39 +94,4 @@
   min-height: 53px;
   align-items: center;
   justify-content: space-around;
-  // .categories__item
-  &__item {
-    position: relative;
-  }
-  // .categories__link
-  &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    padding: 14px 0;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: capitalize;
-    transition: color 0.3s ease-in-out;
-    &:hover {
-      color: var(--accent);
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      width: 0;
-      right: 0;
-      bottom: 0;
-      height: 3px;
-      left: auto;
-      background-color: var(--accent);
-      transition: all 0.3s ease-in-out;
-    }
-    &:hover::before {
-      width: 100%;
-      left: 0;
-      right: auto;
-    }
-  }
 }

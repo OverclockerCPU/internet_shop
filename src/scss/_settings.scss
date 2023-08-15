@@ -11,15 +11,14 @@ html {
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
+  font-weight: 400;
   -webkit-text-size-adjust: 100%;
+  font-size: 20px;
 }
 
 .body {
-  font-family: var(--font-family);
   margin: 0;
   padding: 0;
-  font-weight: 400;
-  font-size: 20px;
 }
 
 img {
@@ -109,4 +108,71 @@ a {
 }
 .flex {
   display: flex;
+}
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: var(--font-family);
+  color: var(--main-text-color);
+}
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 12%;
+  text-transform: uppercase;
+  color: var(--light);
+  background-color: var(--accent);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--accent-dark);
+  }
+}
+// .list__item
+.list {
+  &__item {
+    position: relative;
+  }
+  // .list__link
+  &__link {
+    transform: translate(-50%, -50%);
+    padding: 14px 0;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center center;
+    // font-weight: 600;
+    &:hover {
+      text-shadow: 0 0 0.65px #000000, 0 0 0.65px #000000;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      right: 0;
+      bottom: -15px;
+      height: 3px;
+      left: auto;
+      background-color: var(--accent);
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+}
+.sale {
+  font-family: var(--second-family);
+  color: var(--light);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  background: var(--accent);
+  padding: 8px 20px;
 }
